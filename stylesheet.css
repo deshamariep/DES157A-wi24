@@ -1,7 +1,6 @@
 body{
     margin: auto;
 }
-
 nav ul{
     text-decoration: none;
     list-style: none;
@@ -27,5 +26,10 @@ nav ul li a{
     color: black;
 }
 footer{
-    margin-top: 600px;
+    margin-top: 700px;
+    align-content: center;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
 }

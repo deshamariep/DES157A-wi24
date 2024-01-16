@@ -1,0 +1,13 @@
+body{
+    margin: auto;
+}
+
+nav ul{
+    text-decoration: none;
+    list-style: none;
+    padding: none;
+    display: flex
+}
+nav ul li{
+    text-decoration: none;
+}

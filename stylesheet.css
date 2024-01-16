@@ -10,4 +10,15 @@ nav ul{
 }
 nav ul li{
     text-decoration: none;
+    padding: 14px;
+    flex: 1;
+}
+.header {
+    display: flex;
+}
+.header h1 {
+    flex: 2;
+}
+.header nav {
+    flex: 1;
 }

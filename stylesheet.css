@@ -27,6 +27,9 @@ nav ul li a{
 }
 footer{
     margin-top: 700px;
+    align-content: center;
+}
+footer p{
     text-align: center;
 }
 main{

@@ -11,7 +11,7 @@ nav ul{
 nav ul li{
     text-decoration: none;
     padding: 14px;
-    flex: 1;
+    flex: content;
 }
 .header {
     display: flex;
@@ -21,4 +21,11 @@ nav ul li{
 }
 .header nav {
     flex: 1;
+}
+nav ul li a{
+    text-decoration: none;
+}
+footer{
+    align-content: flex-end;
+    align-items: flex-end;
 }

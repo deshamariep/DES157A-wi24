@@ -37,7 +37,7 @@ main{
     margin: auto;
 }
 div{
-    margin: auto;
+    margin-left: 800px;
 }
 article{
     display: block;

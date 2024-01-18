@@ -11,10 +11,12 @@ body{
 h1{
     font-family: 'Press Start 2P', system-ui;
     font-weight: 400;
+    margin-top: 60px;
 }
 main h2{
     font-family: 'Press Start 2P', system-ui;
     font-weight: 400;
+    font-size: 18px;
 }
 
     @keyframes scrollBackground {

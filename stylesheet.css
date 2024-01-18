@@ -2,9 +2,7 @@ body{
     margin: auto;
     max-width: 1200px;
     color: white;
-    background-image: url(images/space.avif);
-}
-    /* repeat-x;
+    background-image: url(images/space.avif) repeat;
     animation-name: scrollBackground  linear infinite 10s;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -17,7 +15,7 @@ body{
     100% {
         background-position: 100% 0;
     }
-} */
+}
 header{
     text-align: center;
     width: 100%;
@@ -80,6 +78,9 @@ footer{
 footer div{
     display: flex;
     transition: all 2s ease-in-out;
+}
+footer div:hover {
+    background-color: rgb(92, 112, 240);
 }
 footer article{
     display: block;

@@ -14,22 +14,33 @@ main div{
 main div h2{
     text-align: left;
 }
-main div h2 .right{
+.right{
     text-align: right;
 }
-main div ul li a{
+main div ul li{
     display: block;
     background-color: green;
+    width: 300px;
+    height: 40px;
+    padding: 15px;
+}
+main div ul li a{
     color: white;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 footer{
     align-content: center;
 }
 footer .email{
     display: flex;
+    display: block;
+    background-color: green;
+    width: fit-content;
 }
 footer .email a{
     flex: 1;
+    flex-direction: row;
 }
 footer p{
     text-align: center;

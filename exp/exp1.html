@@ -7,11 +7,12 @@
 </head>
 <body>
     <h1>Experiment 1</h1>
-    <h2>"Inspect" my console to see the cool stuff</h2>
+    <h2>Right click to "Inspect" my console and see the cool stuff</h2>
+    <p>Type into the console "i heart lattes!"</p>
     <script>
 
-        var myString = "i heart lattes"
-        var empty = myString.split(" ");
+        var myString = "i heart lattes!"
+        var words = myString.split(" ");
         for (var i = 0; i < myString.length; i++){
             words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
         }

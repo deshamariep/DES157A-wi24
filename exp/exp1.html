@@ -8,9 +8,10 @@
 <body>
     <h1>Experiment 1</h1>
     <h2>Right click to "Inspect" my console and see the cool stuff</h2>
+    <p>keep the console open and hit refresh to keep filling in the prompt</p>
     <script>
 
-        var myString = prompt("Type a short sentence.");
+        var myString = prompt("Type a short sentence in with lowercase letters only.");
         var words = myString.split(" ");
         for (var i = 0; i < words.length; i++) {
             words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);

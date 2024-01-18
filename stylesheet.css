@@ -8,6 +8,15 @@ body{
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
 }
+h1{
+    font-family: 'Press Start 2P', system-ui;
+    font-weight: 400;
+}
+main h2{
+    font-family: 'Press Start 2P', system-ui;
+    font-weight: 400;
+}
+
     @keyframes scrollBackground {
         0% {
             background-position: 0 0;
@@ -24,8 +33,6 @@ header{
     position: relative;
     background-image: url(images/grid\ top.png);
     background-size: cover;
-    font-family: 'Press Start 2P', system-ui;
-    font-weight: 400;
 }
 main{
     display: flex;

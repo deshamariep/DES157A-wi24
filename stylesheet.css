@@ -3,13 +3,14 @@ body{
     max-width: 1200px;
     color: black;
     list-style-type: none;
+    text-decoration: none;
 }
 header{
     text-align: center;
 }
 main{
     display: flex;
-    margin: auto;
+    margin: 50px;
 }
 main div{
     flex: 1;
@@ -37,19 +38,21 @@ main div ul li a{
     padding-top: 10px;
     padding-left: 10px;
 }
-footer h3{
-    text-align: center;
-}
-footer div #email{
+footer{
     display: flex;
-    margin: 60px;
 }
-footer div #email p{
-    flex: 1;
-    flex-direction: row;
+footer h4{
     text-align: center;
+}
+footer div .email{
+    flex: 2;
+    flex-direction: row;
     display: block;
     background-color: green;
+}
+footer div .email p{
+    text-align: center;
+    padding: 5px;
 }
 footer div #email p a{
     text-decoration: none;

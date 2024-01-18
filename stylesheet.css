@@ -1,5 +1,5 @@
 body{
-    margin: auto;
+    margin: 50px;
     max-width: 1200px;
     color: black;
 }
@@ -36,20 +36,16 @@ main div ul li a{
     padding-top: 10px;
     padding-left: 10px;
 }
-footer{
-    align-content: center;
+footer h3{
     text-align: center;
+}
+footer div #email{
     display: flex;
+    margin: 60px;
 }
-footer .email{
-    display: block;
+footer div #email p{
     flex: 1;
-    flex-direction: row;
-    background-color: green;
-}
-footer .email a{
-    padding: 5px;
-}
-footer p{
     text-align: center;
+    display: block;
+    background-color: green;
 }

@@ -2,7 +2,9 @@ body{
     margin: auto;
     max-width: 1200px;
     color: white;
-    background-image: url(images/space.avif) repeat-x;
+    background-image: url(images/space.avif);
+}
+    /* repeat-x;
     animation-name: scrollBackground  linear infinite 10s;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -15,7 +17,7 @@ body{
     100% {
         background-position: 100% 0;
     }
-}
+} */
 header{
     text-align: center;
     width: 100%;
@@ -54,7 +56,7 @@ main div ul li{
     margin-bottom: 10px;
 }
 main div ul li:hover {
-    border-color: rgb(78, 93, 227);
+    border-color: rgb(92, 112, 240);
 }
 main div ul li a{
     color: white;
@@ -64,7 +66,7 @@ main div ul li a{
     text-decoration: none;
 }
 main div ul li a:hover{
-    color: rgb(78, 93, 227);
+    color: rgb(92, 112, 240);
 }
 footer{
     text-align: center;
@@ -86,9 +88,6 @@ footer article{
     flex-direction: row;
     width: 150px;
 }
-footer article:hover{
-    background-color:rgb(78, 93, 227);;
-}
 footer article p{
     text-align: center;
     padding: 5px;
@@ -96,7 +95,4 @@ footer article p{
 footer article p a{
     text-decoration: none;
     color: white;
-}
-footer article p a:hover {
-    color: black
 }

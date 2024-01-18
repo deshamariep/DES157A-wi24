@@ -1,21 +1,19 @@
 body{
     margin: auto;
     max-width: 1200px;
+    height: 100vh;
     color: white;
-    background-image: url(images/space.avif) repeat;
-    animation-name: scrollBackground  linear infinite 10s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    background-image: url(images/space.avif) repeat-x;
+    animation: scrollBackground 30s linear infinite;
 }
-@keyframes scrollBackground {
-    0% {
-        background-position: 0 0;
+    @keyframes scrollBackground {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 100% 0;
+        }
     }
-    100% {
-        background-position: 100% 0;
-    }
-}
 header{
     text-align: center;
     width: 100%;
@@ -77,10 +75,6 @@ footer{
 }
 footer div{
     display: flex;
-    transition: all 2s ease-in-out;
-}
-footer div:hover {
-    background-color: rgb(92, 112, 240);
 }
 footer article{
     display: block;
@@ -96,4 +90,9 @@ footer article p{
 footer article p a{
     text-decoration: none;
     color: white;
+}
+footer div:hover {
+    transition: all 2s ease-in-out;
+    background-color: rgb(92, 112, 240);
+    color: black;
 }

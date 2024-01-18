@@ -5,6 +5,8 @@ body{
     color: white;
     background-image: url(images/space.jpeg); 
     animation: scrollBackground 15s linear infinite;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
 }
     @keyframes scrollBackground {
         0% {
@@ -22,6 +24,8 @@ header{
     position: relative;
     background-image: url(images/grid\ top.png);
     background-size: cover;
+    font-family: 'Press Start 2P', system-ui;
+    font-weight: 400;
 }
 main{
     display: flex;

@@ -3,8 +3,9 @@ body{
     max-width: 1200px;
     height: 100vh;
     color: white;
-    background-image: url(images/space.avif) repeat-x;
-    animation: scrollBackground 30s linear infinite;
+    overflow: hidden;
+    background-image: url(images/space.jpeg) repeat-x; 
+    animation: scrollBackground 10s linear infinite;
 }
     @keyframes scrollBackground {
         0% {
@@ -61,9 +62,6 @@ main div ul li a{
     list-style-type: none;
     text-decoration: none;
 }
-main div ul li a:hover{
-    color: rgb(92, 112, 240);
-}
 footer{
     text-align: center;
     width: 100%;
@@ -75,6 +73,7 @@ footer{
 }
 footer div{
     display: flex;
+    transition: all 2s ease-in-out;
 }
 footer article{
     display: block;
@@ -83,6 +82,9 @@ footer article{
     flex-direction: row;
     width: 150px;
 }
+footer article:hover {
+    background-color: rgb(92, 112, 240);
+}
 footer article p{
     text-align: center;
     padding: 5px;
@@ -90,9 +92,4 @@ footer article p{
 footer article p a{
     text-decoration: none;
     color: white;
-}
-footer div:hover {
-    transition: all 2s ease-in-out;
-    background-color: rgb(92, 112, 240);
-    color: black;
 }

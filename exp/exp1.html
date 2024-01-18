@@ -11,9 +11,9 @@
     <p>Type into the console "i heart lattes!"</p>
     <script>
 
-        var myString = "i heart lattes!"
+        var myString = "i heart lattes!";
         var words = myString.split(" ");
-        for (var i = 0; i < myString.length; i++){
+        for (var i = 0; i < words.length; i++) {
             words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
         }
         var newString = words.join(" ");

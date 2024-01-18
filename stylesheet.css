@@ -1,12 +1,22 @@
 body{
     margin: 50px;
     max-width: 1200px;
-    color: black;
-    list-style-type: none;
-    text-decoration: none;
+    color: white;
+    background-image: url(images/space.avif) repeat-x;
+    animation: scrollbackground 10s linear infinite;
+}
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 header{
     text-align: center;
+    background-image: url(images/grid\ top.png);
+    background-size: cover;
 }
 main{
     display: flex;
@@ -27,28 +37,37 @@ main div ul{
 }
 main div ul li{
     display: block;
-    background-color: green;
+    border: solid 2px black;
+    border-radius: 20px;
     width: 220px;
     height: 40px;
     padding: 15px;
     margin-bottom: 10px;
 }
+main div ul li :hover{
+    border: solid 2px rgb(0, 183, 255)
+}
 main div ul li a{
     color: white;
     padding-top: 10px;
     padding-left: 10px;
+    list-style-type: none;
+    text-decoration: none;
 }
 footer{
     text-align: center;
+    background-image: url(images/grid\ bottom.png);
+    background-size: cover;
 }
 footer div{
     display: flex;
 }
 footer article{
     display: block;
-    background-color: green;
+    border: solid 2px black;
     flex: content;
     flex-direction: row;
+    width: 150px;
 }
 footer article p{
     text-align: center;
@@ -56,5 +75,5 @@ footer article p{
 }
 footer article p a{
     text-decoration: none;
-    color: black;
+    color: white;
 }

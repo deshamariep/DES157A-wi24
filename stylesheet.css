@@ -1,5 +1,6 @@
 body{
     margin: auto;
+    max-width: 1200px;
     color: black;
 }
 header{
@@ -7,9 +8,11 @@ header{
 }
 main{
     display: flex;
+    margin: auto;
 }
 main div{
     flex: 1;
+    margin: 15px;
 }
 main div h2{
     text-align: left;
@@ -17,12 +20,16 @@ main div h2{
 .right{
     text-align: right;
 }
+main div ul{
+    padding-left: 0px;
+}
 main div ul li{
     display: block;
     background-color: green;
     width: 300px;
     height: 40px;
     padding: 15px;
+    margin-bottom: 10px;
 }
 main div ul li a{
     color: white;
@@ -31,21 +38,18 @@ main div ul li a{
 }
 footer{
     align-content: center;
+    text-align: center;
+    display: flex;
 }
 footer .email{
-    display: flex;
     display: block;
-    background-color: green;
-    width: fit-content;
-}
-footer .email a{
     flex: 1;
     flex-direction: row;
+    background-color: green;
+}
+footer .email a{
+    padding: 5px;
 }
 footer p{
     text-align: center;
-}
-main{
-    max-width: 1200px;
-    margin: auto;
 }

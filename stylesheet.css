@@ -2,6 +2,7 @@ body{
     margin: 50px;
     max-width: 1200px;
     color: black;
+    list-style-type: none;
 }
 header{
     text-align: center;
@@ -45,7 +46,12 @@ footer div #email{
 }
 footer div #email p{
     flex: 1;
+    flex-direction: row;
     text-align: center;
     display: block;
     background-color: green;
+}
+footer div #email p a{
+    text-decoration: none;
+    color: black;
 }

@@ -1,11 +1,9 @@
 body{
-    margin: auto;
     max-width: 1200px;
     height: 100vh;
     color: white;
-    overflow: hidden;
-    background-image: url(images/space.jpeg) repeat-x; 
-    animation: scrollBackground 10s linear infinite;
+    background-image: url(images/space.jpeg); 
+    animation: scrollBackground 15s linear infinite;
 }
     @keyframes scrollBackground {
         0% {
@@ -47,7 +45,7 @@ main div ul li{
     display: block;
     border: solid 2px black;
     border-radius: 20px;
-    width: 220px;
+    width: 260px;
     height: 40px;
     padding: 15px;
     margin-bottom: 10px;

@@ -28,7 +28,7 @@ main div ul{
 main div ul li{
     display: block;
     background-color: green;
-    width: 200px;
+    width: 220px;
     height: 40px;
     padding: 15px;
     margin-bottom: 10px;
@@ -44,17 +44,17 @@ footer{
 footer div{
     display: flex;
 }
-footer article .email{
-    flex: 2;
-    flex-direction: row;
+footer article{
     display: block;
     background-color: green;
+    flex: content;
+    flex-direction: row;
 }
-footer article .email p{
+footer article p{
     text-align: center;
     padding: 5px;
 }
-footer article .email p a{
+footer article p a{
     text-decoration: none;
     color: black;
 }

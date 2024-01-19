@@ -41,34 +41,35 @@ main{
 }
 main div{
     flex: 1;
-    margin: 15px;
+    margin: 30x;
 }
 main div h2{
-    text-align: left;
+    text-align: center;
 }
 .right{
-    text-align: right;
+    text-align: center;
 }
 main div ul{
     padding-left: 0px;
-    transition: all 2s ease-in-out
+    align-content: center 
 }
 main div ul li{
     display: block;
-    border: solid 2px black;
+    border: solid 5px darkblue;
     border-radius: 20px;
-    width: 240px;
+    width: 259px;
     height: 40px;
     padding: 15px;
     margin-bottom: 10px;
+    transition: all 2s ease-in-out
 }
 main div ul li:hover {
     border-color: rgb(92, 112, 240);
+    background-color: rgb(92, 112, 240);
 }
 main div ul li a{
     color: white;
-    padding-top: 10px;
-    padding-left: 10px;
+    text-align: center;
     list-style-type: none;
     text-decoration: none;
 }
@@ -87,13 +88,13 @@ footer div{
 }
 footer article{
     display: block;
-    background-color: rgb(56, 56, 56);
+    border: dashed 3px darkblue;
     flex: content;
     flex-direction: row;
-    width: 150px;
+    width: 150px
 }
 footer article:hover {
-    background-color: rgb(92, 112, 240);
+    border-color: rgb(92, 112, 240);
 }
 footer article p{
     text-align: center;

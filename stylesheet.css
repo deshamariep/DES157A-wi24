@@ -39,35 +39,35 @@ header{
 main{
     display: flex;
 }
-main div{
+main nav{
     flex: 1;
     margin: 30x;
 }
-main div h2{
+main nav h2{
     text-align: center;
 }
 .right{
     text-align: center;
 }
-main div ul{
+main nav ul{
     padding-left: 0px;
     align-content: center 
 }
-main div ul li{
+main nav ul li{
     display: block;
     border: solid 5px darkblue;
     border-radius: 20px;
-    width: 259px;
+    width: 220px;
     height: 40px;
     padding: 15px;
     margin-bottom: 10px;
     transition: all 2s ease-in-out
 }
-main div ul li:hover {
+main nav ul li:hover {
     border-color: rgb(92, 112, 240);
     background-color: rgb(92, 112, 240);
 }
-main div ul li a{
+main nav ul li a{
     color: white;
     text-align: center;
     list-style-type: none;

@@ -88,13 +88,15 @@ footer div{
 }
 footer article{
     display: block;
-    background-color: grey transparent 20;
+    background-color: none;
     border: dashed 3px darkblue;
     flex: content;
     flex-direction: row;
     width: 150px
 }
 footer article:hover {
+    background-color: darkblue;
+    opacity: 0.6;
     border-color: rgb(92, 112, 240);
 }
 footer article p{

@@ -82,7 +82,7 @@ footer{
     background-image: url(images/grid\ bottom.png);
     background-size: cover;
 }
-footer section{
+footer div{
     display: flex;
     transition: all 2s ease-in-out;
 }

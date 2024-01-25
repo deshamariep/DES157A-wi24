@@ -74,7 +74,8 @@ main nav ul li a{
     text-decoration: none;
 }
 article{
-    margin: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 article p a{
     text-decoration: none;
@@ -91,7 +92,7 @@ footer{
     color: white;
     text-decoration: none;
 }
-footer section{
+footer div{
     display: flex;
     transition: all 2s ease-in-out;
 }
@@ -112,7 +113,14 @@ footer section p{
     text-align: center;
     padding: 5px;
 }
-footer section p a{
+footer section p{
     text-decoration: none;
     color: white;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    color: rgb(92, 112, 240);
 }

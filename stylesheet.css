@@ -73,6 +73,13 @@ main nav ul li a{
     list-style-type: none;
     text-decoration: none;
 }
+article{
+    margin: 100px;
+}
+article p a{
+    text-decoration: none;
+    color: rgb(92, 112, 240);
+}
 footer{
     text-align: center;
     width: 100%;
@@ -81,12 +88,13 @@ footer{
     position: relative;
     background-image: url(images/grid\ bottom.png);
     background-size: cover;
+    color: white;
 }
 footer div{
     display: flex;
     transition: all 2s ease-in-out;
 }
-footer article{
+footer section{
     display: block;
     background-color: none;
     border: dashed 3px darkblue;
@@ -94,16 +102,16 @@ footer article{
     flex-direction: row;
     width: 150px
 }
-footer article:hover {
+footer section:hover {
     background-color: darkblue;
     opacity: 0.6;
     border-color: rgb(92, 112, 240);
 }
-footer article p{
+footer section p{
     text-align: center;
     padding: 5px;
 }
-footer article p a{
+footer section p a{
     text-decoration: none;
     color: white;
 }

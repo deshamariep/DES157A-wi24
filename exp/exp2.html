@@ -12,13 +12,12 @@
 <body>
     <h1>Experiment 2</h1>
     <p>Answer</p>
-    <p>Hint: "A ..."</p>
 
     <script>
 
         function riddle(){
             var resultA = document.getElementsByTagName('p');
-            var answerR = prompt("I am easy to lift, but hard to throw. What am I?"," ");
+            var answerR = prompt("I am easy to lift, but hard to throw. What am I? Hint: A ..."," ");
             if(answerR === "A feather"){
                 for (var i=0; i<resultA.length; i++){
                     resultA[i].className = "green";

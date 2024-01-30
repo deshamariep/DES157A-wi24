@@ -17,13 +17,16 @@
 
         function riddle(){
             var resultA = document.getElementsByTagName('p');
+            // this var grabs all the P tags, had to go on top so the if/else would chnage it
             var answerR = prompt("I am easy to lift, but hard to throw. What am I? Hint: A ..."," ");
+            // this var sets up the propmt for the riddle
             if(answerR === "A feather"){
                 for (var i=0; i<resultA.length; i++){
                     resultA[i].className = "green";
                     resultA[i].innerHTML = "Correct Answer: A feather";
                 }
                 return true;
+                // if the answer is entered correctly the p tag (var resultA) will change green and show a correct message
                 } else {
                     for (var i=0; i<resultA.length; i++){
                         resultA[i].className = "red"
@@ -31,8 +34,10 @@
                     }
             } 
             return false;
+            // if the answer is entered as anything other than the correct answer an incorrect message will ppear and become red
         }
         riddle();
+        // calls to run the functions
 
     </script>
 </body>

@@ -16,20 +16,20 @@
     <script>
 
         function riddle(){
+            var resultA = document.getElementsByTagName('p');
             var answerR = prompt("I am easy to lift, but hard to throw. What am I?"," ");
             if(answerR === "A feather"){
-                var resultA = document.getElementsByTagName('p');
                 for (var i=0; i<resultA.length; i++){
                     resultA[i].className = "green";
                     resultA[i].innerHTML = "Correct Answer: A feather";
                 }
                 return true;
-            } else {
-                for (var i=0; i<resultA.length; i++){
-                    resultA[i].className = "red"
-                    resultA[i].innerHTML = "Incorrect Answer: " + answer;
-                }
-                alert("Incorrect answer. Try again!");
+                } else {
+                    for (var i=0; i<resultA.length; i++){
+                        resultA[i].className = "red"
+                        resultA[i].innerHTML = "Incorrect Answer: " + answer;
+                    }
+                    alert("Incorrect answer. Try again!");
             } 
             return false;
         }

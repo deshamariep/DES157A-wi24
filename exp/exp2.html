@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        .green { color: green; }
+        .red { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p>Answer</p>
+
+    <script>
+
+        function riddle(){
+            var answer = prompt("I am easy to lift, but hard to throw. What am I?","")
+            if(answer === "A feather"){
+                var resultA = document.getElementsByTagName('p');
+                for (var i=0; i<resultA.length; i++){
+                    resultA[i].className = "green";
+                    resultA[i].innerHTML = "Correct Answer: A feather";
+                }
+                return true;
+            } else {
+                for (var i=0; i<resultA.length; i++){
+                    resultA[i].className = "red"
+                    resultA[i].innerHTML = "Incorrec Answer: " + answer;
+                }
+                alert("Incorrect answer. Try again!");
+            } 
+            return false
+        }
+
+    </script>
+</body>
+</html>

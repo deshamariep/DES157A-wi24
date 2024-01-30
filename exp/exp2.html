@@ -16,8 +16,8 @@
     <script>
 
         function riddle(){
-            var answer = prompt("I am easy to lift, but hard to throw. What am I?","")
-            if(answer === "A feather"){
+            var answerR = prompt("I am easy to lift, but hard to throw. What am I?"," ");
+            if(answerR === "A feather"){
                 var resultA = document.getElementsByTagName('p');
                 for (var i=0; i<resultA.length; i++){
                     resultA[i].className = "green";
@@ -31,7 +31,7 @@
                 }
                 alert("Incorrect answer. Try again!");
             } 
-            return false
+            return false;
         }
 
     </script>

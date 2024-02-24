@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    height: 100px;
+    padding: 30px;
+}
+h1{
+    flex: 2;
+    font-size: 44px;
+}
+h2{
+    flex: 1;
+    padding-left: 30px;
+    font-size: 32px;
+}
+body{
+    background-color: beige;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Alkatra", system-ui;
+    font-weight: 400;
+    color: rgb(137, 182, 217);
+}
+main{
+    display: flex;
+    max-height: 700px;
+}
+section{
+    flex: 1;
+    max-width: 274px;
+    border-bottom: 2px solid rgb(137, 182, 217);
+    border-top: 2px solid rgb(137, 182, 217);
+    border-radius: 25px;
+}
+
+#container {
+    height: 500px; /* Set the height of the container to accommodate two images */
+    width: 270px;
+    overflow: hidden; 
+    position: relative; 
+}
+
+#garden {
+    border: 2px solid rgb(137, 182, 217);
+    border-radius: 25px;
+    background-color: white;
+    height: 2025px; /* Set the height of your scrolling section to accommodate all images */
+    width: 270px; /* Set the width of your scrolling section to match image width */
+    position: absolute; 
+    top: 0;
+    animation: scroll 15s linear infinite; 
+}
+
+#garden:hover {
+    animation-play-state: paused;
+}
+
+#athea:hover + #garden {
+    animation-play-state: paused; /* Pause animation on hover over athea */
+}
+#vincent:hover + #garden {
+    animation-play-state: paused; /* Pause animation on hover over vincent */
+}
+#diony:hover + #garden {
+    animation-play-state: paused; /* Pause animation on hover over diony */
+}
+
+@keyframes scroll {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-675px); 
+    }
+}
+
+#garden img {
+    margin-bottom: 10px;
+}
+
+article{
+    flex: 2;
+    margin-left: 150px;
+    margin-right: 100px;
+    display: block;
+    background-color: white;
+    border: 2px solid rgb(137, 182, 217);
+    border-radius: 25px;
+    height: 445px;
+    padding: 30px;
+}
+article h3{
+    font-family: "Alkatra", system-ui;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 0px;
+}
+article p{
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: black;
+}
+footer{
+    height: 100px;
+}
+footer p{
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+footer p a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+footer p a:hover{
+    color: rgb(137, 182, 217);
+    font-size: 22px;
+}

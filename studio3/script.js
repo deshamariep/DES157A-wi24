@@ -1,6 +1,6 @@
 (function(){
     'use strict'
-    console.log('reading JS');
+    console.log("running JS");
 
     const gameStart = document.querySelector('#gameStart');
     const gameControl = document.querySelector('#gamecontrol');
@@ -28,4 +28,4 @@
 
         // setUpTurn();
     });
-});
+})();

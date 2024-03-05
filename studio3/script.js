@@ -2,7 +2,7 @@
     'use strict'
     console.log("running JS");
 
-    const gameStart = document.getElementById('gameStart');
+    const gameStart = document.querySelector('#gameStart');
     const gameControl = document.querySelector('#gamecontrol');
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
@@ -18,7 +18,7 @@
         // index: 0,
         // gameEnd: 29
     };
-    startGame.addEventListener('click', function(){
+    gameStart.addEventListener('click', function(){
         gameControl.innerHTML = '<h2>You`re playing!</h2>';
         gameControl.innerHTML += '<button id="quit">End Game</button>';
 

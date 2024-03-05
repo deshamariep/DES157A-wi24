@@ -2,8 +2,7 @@
     'use strict'
     console.log('reading JS');
 
-    const twoPlayer = document.querySelector('#twoPlayer');
-    const threePlayer = document.querySelector('#threePlayer');
+    const gameStart = document.querySelector('#gameStart');
     const gameControl = document.querySelector('#gamecontrol');
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');

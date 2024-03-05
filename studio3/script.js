@@ -18,4 +18,14 @@
         index: 0,
         gameEnd: 29
     };
+    startGame.addEventListener('click', function(){
+        gameControl.innerHTML = '<h2>You`re playing!</h2>';
+        gameControl.innerHTML += '<button id="quit">End Game</button>';
+
+        document.getElementById('quit').addEventListener('click', function(){
+            location.reload();
+        });
+
+        // setUpTurn();
+    });
 });

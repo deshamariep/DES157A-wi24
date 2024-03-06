@@ -24,7 +24,7 @@
     };
     gameStart.addEventListener('click', function(){
         gameControl.innerHTML = '<h2>You`re Playing!</h2>';
-        gameControl.innerHTML += '<button id="quit">End Game</button>';
+        gameControl.innerHTML += '<button id="quit">Quit</button>';
 
         document.getElementById('quit').addEventListener('click', function(){
             location.reload();

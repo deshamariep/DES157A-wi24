@@ -35,26 +35,24 @@
         game.innerHTML = `<p>${gameData.players[gameData.currentPlayer]} choose a card</p>`;
     
         const currentQuestion = gameData.index % 4; // Alternates between 0, 1, 2, 3
-        let buttonHTML = '';
+        let actionArea = '';
     
         switch (currentQuestion) {
             case 0: // Question 1: Red or Black
-                buttonHTML = '<button class="roll" data-choice="red">Red</button><button class="roll" data-choice="black">Black</button>';
+                actionArea.innerHTML = '<button class="roll" data-choice="red">Red</button><button class="roll" data-choice="black">Black</button>';
                 break;
             case 1: // Question 2: Higher or Lower
-                buttonHTML = '<button class="roll">Higher</button><button class="roll">Lower</button>';
+            actionArea.innerHTML = '<button class="roll">Higher</button><button class="roll">Lower</button>';
                 break;
             case 2: // Question 3: Inside or Outside
-                buttonHTML = '<button class="roll">Inside</button><button class="roll">Outside</button>';
+            actionArea.innerHTML = '<button class="roll">Inside</button><button class="roll">Outside</button>';
                 break;
             case 3: // Question 4: Suite
-                buttonHTML = '<button class="roll" data-choice="spades">Spades</button><button class="roll" data-choice="hearts">Hearts</button><button class="roll" data-choice="diamonds">Diamonds</button><button class="roll" data-choice="cloves">Cloves</button>';
+            actionArea.innerHTML = '<button class="roll" data-choice="spades">Spades</button><button class="roll" data-choice="hearts">Hearts</button><button class="roll" data-choice="diamonds">Diamonds</button><button class="roll" data-choice="cloves">Cloves</button>';
                 break;
             default:
                 break;
         }
-    
-        actionArea.innerHTML = buttonHTML;
         
         document.querySelectorAll('.roll').forEach(function(btn) {
             btn.addEventListener('click', function() {
@@ -72,8 +70,8 @@
         
         switch (currentQuestion) {
             case 0: // Question 1: Red or Black
-                if ((choice === "red" && randomCard.includes("hearts")) || 
-                    (choice === "black" && !randomCard.includes("hearts"))) {
+                if ((choice === "red" && randomCard.includes("hearts", "diamonds")) || 
+                    (choice === "black" && !randomCard.includes("spades", "cloves"))) {
                     game.innerHTML += "<p>Correct! The card is " + choice + ".</p>";
                 } else {
                     game.innerHTML += "<p>Incorrect! The card is " + (choice === "red" ? "black" : "red") + ".</p>";

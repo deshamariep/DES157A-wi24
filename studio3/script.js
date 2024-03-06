@@ -16,11 +16,7 @@
         q2:["higher", "lower"],
         q3:["inside", "outside"],
         q4: ["spades", "hearts", "diamonds", "cloves"]
-        // roll1: 0,
-        // roll2: 0,
-        // rollSum: 0,
-        // index: 0,
-        // gameEnd: 29
+        index: 0
     };
     gameStart.addEventListener('click', function(){
         gameControl.innerHTML = '<h2>You`re Playing!</h2>';

@@ -25,12 +25,13 @@
     gameStart.addEventListener('click', function(){
         gameControl.innerHTML = '<h2>You`re playing!</h2>';
         gameControl.innerHTML += '<button id="quit">End Game</button>';
-    
+
         document.getElementById('quit').addEventListener('click', function(){
             location.reload();
         });
         setUpTurn();
     });
+    
     function setUpTurn(){
         game.innerHTML = `<p>${gameData.players[gameData.index]} choose a card</p>`;
 

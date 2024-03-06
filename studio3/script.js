@@ -3,7 +3,7 @@
     console.log("running JS");
 
     const gameStart = document.querySelector('#gameStart');
-    const gameControl = document.querySelector('#gamecontrol');
+    const gameControl = document.querySelector('#gameControl');
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
@@ -23,7 +23,7 @@
         // gameEnd: 29
     };
     gameStart.addEventListener('click', function(){
-        gameControl.innerHTML = '<h2>You`re playing!</h2>';
+        gameControl.innerHTML = '<h2>You`re Playing!</h2>';
         gameControl.innerHTML += '<button id="quit">End Game</button>';
 
         document.getElementById('quit').addEventListener('click', function(){
@@ -31,7 +31,7 @@
         });
         setUpTurn();
     });
-    
+
     function setUpTurn(){
         game.innerHTML = `<p>${gameData.players[gameData.index]} choose a card</p>`;
 

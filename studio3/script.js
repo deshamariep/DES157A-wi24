@@ -1,6 +1,6 @@
 (function(){
     'use strict';
-    console.log("running js");
+    console.log('running js');
 
     const gameStart = document.querySelector('#gameStart');
     const gameControl = document.querySelector('#gameControl');
@@ -16,7 +16,8 @@
         q2:["higher", "lower"],
         q3:["inside", "outside"],
         q4: ["spades", "hearts", "diamonds", "cloves"],
-        index: 0
+        index: 0,
+        currentPlayer: 0 // Index of the current player
     };
 
     gameStart.addEventListener('click', function(){
@@ -31,7 +32,7 @@
     });
 
     function setUpTurn(){
-        game.innerHTML = `<p>${gameData.players[gameData.index]} choose a card</p>`;
+        game.innerHTML = `<p>${gameData.players[gameData.currentPlayer]} choose a card</p>`;
     
         const currentQuestion = gameData.index % 4; // Alternates between 0, 1, 2, 3
         let buttonHTML = '';
@@ -101,5 +102,8 @@
         }
         // Increment index to alternate between players
         gameData.index++;
-    }
+
+        // Alternate between players for each question
+        gameData.currentPlayer = (gameData.currentPlayer + 1) % 2;
+    };
 })();

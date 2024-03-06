@@ -26,10 +26,18 @@
         gameControl.innerHTML = '<h2>You`re playing!</h2>';
         gameControl.innerHTML += '<button id="quit">End Game</button>';
     
-        // Adding event listener after adding the button to the DOM
         document.getElementById('quit').addEventListener('click', function(){
             location.reload();
         });
-        // setUpTurn();
+        setUpTurn();
     });
+    function setUpTurn(){
+        game.innerHTML = `<p>${gameData.players[gameData.index]} choose a card</p>`;
+
+        actionArea.innerHTML = '<button class="roll">Red</button><button class="roll">Black</button>';
+        document.getElementsByClassName('roll').addEventListener('click', function(){
+
+            // throwDice();
+        });
+    };
 })();

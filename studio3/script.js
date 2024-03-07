@@ -78,6 +78,11 @@
                 } else {
                     game.innerHTML += "<p>Incorrect! The card is " + (choice === "red" ? "black" : "red") + ".</p>";
                 }
+                game.innerHTML += message;
+                setTimeout(function() {
+                    game.innerHTML = '';
+                    setUpTurn();
+                }, 2000);
                 break;
             case 1: // Question 2: Higher or Lower
                 // Logic to compare the card with the previous card can be implemented here
@@ -96,6 +101,8 @@
                 } else {
                     game.innerHTML += "<p>Incorrect! The suite is not " + suite + ".</p>";
                 }
+                game.innerHTML += "<p>The card chosen is: " + randomCard + "</p>";
+                setUpTurn();
                 break;
             default:
                 break;

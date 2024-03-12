@@ -51,19 +51,19 @@ div button{
 }
 div button:hover{
     opacity: 85%;
-    background-color: none;
+    background-color: rgb(92, 112, 240);
 }
 article{
     border: 2px solid rgb(92, 112, 240);
     border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 article h3{
+    padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
 article p{
+    padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }

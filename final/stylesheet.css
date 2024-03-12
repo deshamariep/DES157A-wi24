@@ -55,9 +55,11 @@ article{
 }
 article h3{
  margin: 8px;
+ /* padding: 10px; */
 }
 article p{
  margin: 8px;
+ /* padding: 10px; */
 }
 footer{
     text-align: center;

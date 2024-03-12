@@ -43,12 +43,20 @@ div button{
     margin-left: 8px;
     margin-right: 8px;
     color: white;
+    background-color: black;
+    opacity: 20%;
     border: 1px solid rgb(92, 112, 240);
     border-radius: 10px;
 }
 article{
     border: 2px solid rgb(92, 112, 240);
     border-radius: 20px;
+}
+article h3{
+ margin: 8px;
+}
+article p{
+ margin: 8px;
 }
 footer{
     text-align: center;

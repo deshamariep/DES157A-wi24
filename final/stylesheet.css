@@ -42,6 +42,7 @@ div button{
     flex: 1;
     margin-left: 8px;
     margin-right: 8px;
+    padding: 5px;
     color: white;
     background-color: black;
     opacity: 20%;

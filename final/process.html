@@ -43,7 +43,26 @@
         <p><a href="https://deshamariep.github.io/DES157A-wi24/">Click me to get back to my portal page!</a></p>
     </footer>
     <script>
+        (function(){
+            const questions = document.querySelector('#questions');
+            const user1 = document.querySelector('#faizan');
+            const user2 = document.querySelector('#mavis');
+            const user3 = document.querySelector('#stella');
+            const info = document.querySelector('#information');
 
+            user1.addEventListener('click', function(){
+                info.innerHTML = "";
+            })
+            user2.addEventListener('click', function(){
+                info.innerHTML = "";
+            })
+            user3.addEventListener('click', function(){
+                info.innerHTML = "";
+            })
+            questions.addEventListener('click', function(){
+                info.innerHTML = "";
+            })
+        }());
     </script>
 </body>
 </html>

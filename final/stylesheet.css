@@ -1,5 +1,7 @@
 body{
     margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
     max-width: 1200px;
     height: 100vh;
     background-image: url(../images/space.jpeg); 
@@ -7,17 +9,18 @@ body{
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
     color: white;
-    text-align: center;
 }
 h1{
     font-family: 'Press Start 2P', system-ui;
     font-weight: 400;
     margin-top: 60px;
+    text-align: center;
 }
 main h2{
     font-family: 'Press Start 2P', system-ui;
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
 }
 
     @keyframes scrollBackground {

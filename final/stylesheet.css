@@ -45,9 +45,13 @@ div button{
     padding: 5px;
     color: white;
     background-color: black;
-    opacity: 20%;
+    opacity: 40%;
     border: 1px solid rgb(92, 112, 240);
     border-radius: 10px;
+}
+div button:hover{
+    opacity: 90%;
+    background-color: rgb(92, 112, 240);
 }
 article{
     border: 2px solid rgb(92, 112, 240);

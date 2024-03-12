@@ -63,4 +63,5 @@ footer p a{
 }
 footer p a:hover{
     color: rgb(92, 112, 240);
+    transform: scale(2);
 }

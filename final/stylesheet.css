@@ -45,25 +45,23 @@ div button{
     padding: 5px;
     color: white;
     background-color: black;
-    opacity: 40%;
+    opacity: 50%;
     border: 1px solid rgb(92, 112, 240);
     border-radius: 10px;
 }
 div button:hover{
-    opacity: 90%;
-    background-color: rgb(92, 112, 240);
+    opacity: 85%;
+    background-color: white;
 }
 article{
     border: 2px solid rgb(92, 112, 240);
     border-radius: 20px;
 }
 article h3{
- margin: 8px;
- /* padding: 10px; */
+ padding: 15px;
 }
 article p{
- margin: 8px;
- /* padding: 10px; */
+ padding: 15px;
 }
 footer{
     text-align: center;

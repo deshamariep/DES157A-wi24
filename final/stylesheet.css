@@ -7,6 +7,7 @@ body{
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
     color: white;
+    text-align: center;
 }
 h1{
     font-family: 'Press Start 2P', system-ui;
@@ -53,11 +54,6 @@ footer{
     background-image: url(../images/grid\ bottom.png);
     background-size: cover;
     text-decoration: none;
-}
-footer:hover {
-    background-color: darkblue;
-    opacity: 0.6;
-    border-color: rgb(92, 112, 240);
 }
 footer section p{
     text-decoration: none;

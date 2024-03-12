@@ -2,7 +2,6 @@ body{
     margin: auto;
     max-width: 1200px;
     height: 100vh;
-    color: white;
     background-image: url(images/space.jpeg); 
     animation: scrollBackground 15s linear infinite;
     font-family: 'Kanit', sans-serif;

@@ -51,7 +51,31 @@
             const info = document.querySelector('#information');
 
             user1.addEventListener('click', function(){
-                info.innerHTML = "";
+                info.innerHTML = `1. Demographic Information:<br>
+                                 - What is your age?<br>
+                                    22<br>
+                                - What is your occupation?<br>
+                                Student - 4th year, Landscape Architect Major<br>
+                                2. Pre-Test Questions:<br>
+                                - Just glancing at the page, what are your expectations for what the page is for?<br>
+                                It tells you to hover over a plant<br>
+                                3. During Task Execution:<br>
+                                - Can you walk me through what you are doing and why?<br>
+                                Hovering over a plant because it says to, clicked back to portal page because it was there<br>
+                                - How do you feel about the layout/design of this page/screen?<br>
+                                Hard to read, expands across whole monitor<br> 
+                                - Are there any elements that confuse you or that you find difficult to understand?<br>
+                                Cant scroll to chose a plant, have to wait for it to scroll down<br>
+                                - Did you encounter any issues while completing this task?<br>
+                                No issues<br>
+                                4. Post-Task Questions:<br>
+                                - Were there any features or functionalities missing that you expected to find?<br>
+                                Smaller window is better, on larger screens you cant really see all the text, clicking on the picture instead: "once I moves the mouse the information doesnt remain"<br>
+                                - What aspects do you like the most?<br>
+                                The auto scrolling<br>
+                                5. Overall Impressions:<br>
+                                - Do you have any additional comments or feedback?<br>
+                                None`;
             })
             user2.addEventListener('click', function(){
                 info.innerHTML = "";
@@ -60,7 +84,25 @@
                 info.innerHTML = "";
             })
             questions.addEventListener('click', function(){
-                info.innerHTML = "";
+                info.innerHTML = `1. Demographic Information:<br>
+            - What is your age? <br>
+            - What is your occupation?
+            <br>
+         2. Pre-Test Questions:<br>
+            - Just glancing at the page, what are your expectations for what the page is for?
+            <br>
+         3. During Task Execution:<br>
+            - Can you walk me through what you are doing and why?<br>
+            - How do you feel about the layout/design of this page/screen?<br>
+            - Are there any elements that confuse you or that you find difficult to understand?<br>
+            - Did you encounter any issues while completing this task?
+            <br>
+         4. Post-Task Questions:<br>
+            - Were there any features or functionalities missing that you expected to find?<br>
+            - What aspects do you like the most?
+            <br>
+         5. Overall Impressions:<br>
+            - Do you have any additional comments or feedback?</p>`;
             })
         }());
     </script>

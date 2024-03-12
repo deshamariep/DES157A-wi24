@@ -52,6 +52,7 @@ footer section p{
 }
 footer p a{
     text-decoration: none;
+    color: white;
 }
 footer p a:hover{
     color: rgb(92, 112, 240);

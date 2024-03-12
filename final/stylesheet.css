@@ -51,7 +51,8 @@ div button{
 }
 div button:hover{
     opacity: 85%;
-    background-color: rgb(92, 112, 240);
+    background-color: black;
+    border: 2px solid rgb(92, 112, 240);
 }
 article{
     border: 2px solid rgb(92, 112, 240);

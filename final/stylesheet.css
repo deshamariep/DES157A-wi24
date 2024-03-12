@@ -2,10 +2,11 @@ body{
     margin: auto;
     max-width: 1200px;
     height: 100vh;
-    background-image: url(images/space.jpeg); 
+    background-image: url(../images/space.jpeg); 
     animation: scrollBackground 15s linear infinite;
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
+    color: white;
 }
 h1{
     font-family: 'Press Start 2P', system-ui;
@@ -49,7 +50,6 @@ footer{
     position: relative;
     background-image: url(images/grid\ bottom.png);
     background-size: cover;
-    color: white;
     text-decoration: none;
 }
 footer:hover {
@@ -59,11 +59,9 @@ footer:hover {
 }
 footer section p{
     text-decoration: none;
-    color: white;
 }
 footer p a{
     text-decoration: none;
-    color: white;
 }
 footer p a:hover{
     color: rgb(92, 112, 240);

@@ -36,10 +36,10 @@ header{
     background-image: url(images/grid\ top.png);
     background-size: cover;
 }
-section{
+div{
     display: flex;
 }
-section div{
+div button{
     flex: 1;
 }
 footer{
@@ -53,26 +53,10 @@ footer{
     color: white;
     text-decoration: none;
 }
-footer div{
-    display: flex;
-    transition: all 2s ease-in-out;
-}
-footer section{
-    display: block;
-    background-color: none;
-    border: dashed 3px darkblue;
-    flex: content;
-    flex-direction: row;
-    width: 150px
-}
-footer section:hover {
+footer:hover {
     background-color: darkblue;
     opacity: 0.6;
     border-color: rgb(92, 112, 240);
-}
-footer section p{
-    text-align: center;
-    padding: 5px;
 }
 footer section p{
     text-decoration: none;

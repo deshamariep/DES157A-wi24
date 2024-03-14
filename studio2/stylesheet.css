@@ -20,6 +20,10 @@ body{
     font-weight: 400;
     color: rgb(137, 182, 217);
 }
+body p{
+    color: black;
+    margin-left: 10px;
+}
 main{
     display: flex;
     max-height: 700px;

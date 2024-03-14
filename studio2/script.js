@@ -11,7 +11,7 @@
     });
 
     document.getElementById('athea').addEventListener('mouseout', function(){
-        plantInfo.innerHTML = '<h3>Welcome to my garden!</h3><p>Hover over one of my pretty babies (choose a plant) :)</p>';
+        plantInfo.innerHTML = '<h3> <- hover for info</h3>';
         garden.style.animationPlayState = 'running';
     });
     // vincent
@@ -21,7 +21,7 @@
     });
 
     document.getElementById('vincent').addEventListener('mouseout', function(){
-        plantInfo.innerHTML = '<h3>Welcome to my garden!</h3><p>Hover over one of my pretty babies (choose a plant) :)</p>';
+        plantInfo.innerHTML = '<h3> <- hover for info</h3>';
         garden.style.animationPlayState = 'running';
     });
     // diony
@@ -31,16 +31,16 @@
     });
 
     document.getElementById('diony').addEventListener('mouseout', function(){
-        plantInfo.innerHTML = '<h3>Welcome to my garden!</h3><p>Hover over one of my pretty babies (choose a plant) :)</p>';
+        plantInfo.innerHTML = '<h3> <- hover for info</h3>';
         garden.style.animationPlayState = 'running';
     });
 
     garden.addEventListener('mouseout', function() {
-        plantInfo.innerHTML = '<h3>Welcome to my garden!</h3><p>Hover over one of my pretty babies (choose a plant) :)</p>';
+        plantInfo.innerHTML = '<h3> <- hover for info</h3>';
     });
 
     // Add animation end listener to restart animation when it ends: learned animationiteration
     garden.addEventListener('animationiteration', function() {
-        plantInfo.innerHTML = '<h3>Welcome to my garden!</h3><p>Hover over one of my pretty babies (choose a plant) :)</p>';
+        plantInfo.innerHTML = '<h3> <- hover for info</h3>';
     });
 })();

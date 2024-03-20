@@ -44,15 +44,15 @@ div main nav ul li button{
 }
 #plants:hover{
     border: 1px solid rgb(137, 182, 217);
-    scale: 120%;
+    scale: 1.2;
 }
 #art:hover{
     border: 1px solid orchid;
-    scale: 120%;
+    scale: 1.2;
 }
 #music:hover{
     border: 1px solid rgb(228, 11, 11, 0.856);
-    scale: 120%;
+    scale: 1.2;
 }
 #info{
     display: block;
@@ -72,7 +72,7 @@ div main nav ul li button{
     max-width: 300px;
 }
 #info div:hover{
-    scale: 130%;
+    scale: 1.3;
 }
 #popup{
     display: none;
@@ -220,7 +220,7 @@ div main nav{
 #popup img{
     display: block;
     margin: auto;
-    scale: 110%;
+    scale: 1.1;
 }
 footer{
     height: 100px;

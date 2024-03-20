@@ -1,0 +1,233 @@
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    max-width: 800px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+div{
+    display: flex;
+}
+div .scroll{
+    flex: 1;
+    width: 40px;
+}
+div main{
+    flex: 5;
+    background-image: url(images/SequenceMobile.gif);
+    background-size: contain;
+    position: relative;
+}
+div main nav{
+    padding: 10px;
+    padding-bottom: 0px;
+}
+div main nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+div main nav ul li{
+    flex: content;
+}
+div main nav ul li button{
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;;
+}
+#plants:hover{
+    border: 1px solid rgb(137, 182, 217);
+    scale: 120%;
+}
+#art:hover{
+    border: 1px solid orchid;
+    scale: 120%;
+}
+#music:hover{
+    border: 1px solid rgb(228, 11, 11, 0.856);
+    scale: 120%;
+}
+#info{
+    display: block;
+    background-color: black;
+    opacity: 80%;
+    border: solid white 1px;
+    text-align: left;
+    margin: 40px;
+    padding: 20px;
+}
+#info img{
+    display: block;
+    margin: auto;
+}
+#info div{
+    display: block;
+    max-width: 300px;
+}
+#info div:hover{
+    scale: 130%;
+}
+#popup{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 350px;
+    border: 3px solid white;
+    flex-direction: column;
+}
+#popup h2{
+    text-align: center;
+    margin-bottom: 0px;
+}
+#popup img{
+    margin: 0px 50px;
+}
+#popup.plants{
+    border-color: rgb(137, 182, 217);
+    background-color: beige;
+    color: black;
+    text-align: center;
+}
+#popup.plants h2{
+    color: rgb(137, 182, 217);
+}
+#popup.plants p{
+    margin: 40px;
+}
+#popup.art{
+    border-color: rgb(143, 84, 199);
+    background-color:lightgray;
+    color: black;
+    text-align: center;
+}
+#popup.art img{
+    display: block;
+    margin: auto;
+}
+#popup.art h2{
+    color: rgb(143, 84, 199);
+}
+#popup.art p{
+    margin: 0px 30px; 
+}
+#popup.music{
+    border-color: rgba(228, 11, 11, 0.856);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#popup.music h2{
+    margin-bottom: 15px;
+    color: rgba(228, 11, 11, 0.856);
+}
+#popup.music p{
+    margin: 30px;
+    margin-top: 15px;
+}
+#popup.music ul{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+}
+#popup.music p a{
+    color: white;
+    text-decoration: none;
+}
+#popup.music p a:hover{
+    color: rgba(228, 11, 11, 0.856);
+    font-size: 18px;
+}
+footer{
+    height: 75px;
+    text-align: center;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+footer p a:hover{
+    font-size: 20px;
+    color: tan;
+}
+.scroll {
+    background-image: url('images/scrollMobile.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+
+@media only screen and (min-width: 800px){
+body{
+    margin: auto;
+    max-width: 1200px;
+}
+header{
+    height: 150px;
+}
+header h1{
+    padding: 30px;
+}
+div{
+    display: flex;
+}
+div .scroll{
+    flex: 1;
+    width: 100px;
+}
+div main{
+    flex: 5;
+    background-image: url(images/SequenceDesktop.gif);
+    background-size: contain;
+    position: relative;
+}
+div main nav{
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-left: 135px;
+}
+#info{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 400px;
+}
+#info div{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+#popup{
+    width: 450px;
+}
+#popup h2{
+    text-align: center;
+    margin-bottom: 0px;
+}
+#popup img{
+    display: block;
+    margin: auto;
+    scale: 110%;
+}
+footer{
+    height: 100px;
+}
+.scroll {
+    background-image: url('images/scrollDesktop.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+}
